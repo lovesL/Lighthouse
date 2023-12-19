@@ -1,26 +1,26 @@
 "use strict";
 
 // TOGGLE DARK
-const sunIcon = document.getElementById("sunIcon"),
-  moonIcon = document.getElementById("moonIcon"),
-  userTheme = localStorage.getItem("theme"),
-  toggleBtn = document.getElementById("light__to--dark");
+// const sunIcon = document.getElementById("sunIcon"),
+//   moonIcon = document.getElementById("moonIcon"),
+//   userTheme = localStorage.getItem("theme"),
+//   toggleBtn = document.getElementById("light__to--dark");
 
 // TOGGLING BTN ACTIVE CLASS
-const btnToggle = () => {
-  moonIcon.classList.toggle("hidden");
-  sunIcon.classList.toggle("hidden");
-};
+// const btnToggle = () => {
+//   moonIcon.classList.toggle("hidden");
+//   sunIcon.classList.toggle("hidden");
+// };
 
 // CHECKING SYSTEM & LOCALSTORAGE THEME
-const themeCheck = () => {
-  if (userTheme === "dark") {
-    document.documentElement.classList.add("dark");
-    moonIcon.classList.add("hidden");
-    return;
-  }
-  sunIcon.classList.add("hidden");
-};
+// const themeCheck = () => {
+//   if (userTheme === "dark") {
+//     document.documentElement.classList.add("dark");
+//     moonIcon.classList.add("hidden");
+//     return;
+//   }
+//   sunIcon.classList.add("hidden");
+// };
 
 // SWITCHING THEME CONDITIONALLY
 const themeSwitch = () => {
@@ -32,13 +32,13 @@ const themeSwitch = () => {
   // }
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
-  btnToggle();
+  // btnToggle();
 };
 
 // MANUALLY SWITCHING THEME
 // toggleBtn.addEventListener("click", themeSwitch);
 
 // WINDOW RELOAD THEME CHECK
-themeCheck();
+// themeCheck();
 // TOGGLE DARK
 themeSwitch();
